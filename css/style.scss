@@ -1,0 +1,28 @@
+/* Basis voor elke body */
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box; 
+    color: #ffff;
+}
+
+/* Variabele kleuren */
+$color1: #8F0000; /* kleur navigatie balk, footer, blokken, titels */
+$color2: #d62d30;
+$color3: rgb(38,20,42); /*- achtergrondkleur knop */
+$color4: #0000; /* kleur lopende tekst */
+$color5: #ffff; /* kleur em
+
+$alfa1: 0,5; /*transparantie van knop (hoover) */
+$alfa2: 1; 
+
+$bg-gradient: linear-gradient(-45 deg, $color1, $color 2);
+
+.bg-fobie footer{
+    background-color: $color1;
+
+}
+
+body{
+    color:blue; 
+}
