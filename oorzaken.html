@@ -8,7 +8,7 @@
     <title>Unieke Fobiën - Website by Helena Minnaert</title>
 
     <!-- bootstrap 4 css -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -22,15 +22,15 @@
 
     <!-- Navigatie -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-fobie"> <!--bg-light wordt veranderd naar bg-fobie -->
-        <div class= "container"> 
+    <nav class="navbar navbar-expand-lg bg-fobie"> <!--bg-light wordt veranderd naar bg-fobie -->
+        <div class= "container-fluid"> 
             <a class="navbar-brand" href="index.html"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html" target="self" title="homepage">HOME<span class="sr-only">(current)</span></a>
                 </li>
@@ -52,44 +52,38 @@
         </div>
     </nav>
 
-    <div class="container">
-
-        <!-- Intro tekst -->
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h3>Oorzaken?</h3>
-                <p> <strong>Imerominiafobie:</strong>de; v; Grieks; meervoud: imerominiafobieën
-                    Imerominiafoob: iemand die imerominiafobie heeft; meervoud: imerominiafoben 
-                    Kalenderofobie: de; v; Nederlands; meervoud: kalenderofobieën
-                    Kalenderofoob: iemand die kalenderofobie heeft; meervoud: kalenderofoben
-                    Imerominiafobie of in het Nederlands kalenderofobie is een psychologische (on)gemotiveerde vrees voor kalenders en/of agendas in zowel papieren en/of digitale vorm. De fobie kan verschillende oorzaken hebben en uit zich in verschillende symptomen. De voornaamste redenen vindt u hier terug.                   
-                </p>
-            </div>
-
-            <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="contactimg" class="contactimg">
-            </div>
-        </div> 
+    <div class="container-fluid">
 
         <!--Tekst oorzaken-->
         <div class="row">
 
             <!-- Jeugdtrauma -->
             <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="jeugdtraumaimg" title="jeugdtraumaimg" class="jeugdtraumaimg">    
+                <div class="content-wrapper_oorzaak">
+                    <img src="images/strook.png" title="jeugdtrauma" alt="jeugdtrauma" class="strookimg">
+
+                    <div class="img_wrapper">
+                        <img src="images/blue.jpg" alt="jeugdtraumaimg" title="jeugdtraumaimg" class="jeugdtraumaimg">  
+                    </div>
+                </div>  
             </div>
 
             <div class="col-md-6 col-sm-12">
 
-                <article class="jeugdtrauma">
-                    <h3><em>Jeugdtrauma</em></h3>
-                    <p> De voornaamste oorzaak van kalenderofobie is een jeugdtrauma. Als kind keek de kalenderofoob vaak uit naar uitstappen. Deze schreef vervolgens de datum met tijdstip braaf op een aftelkalender om vervolgens iedere dag te doorstrepen tot het grote moment. Jammergenoeg werd deze persoon daarin te vaak teleurgesteld. De geplande uitstappen vielen om verschillende redenen steeds in het water. Hierdoor linkt de kalenderofoob het gevoel van pijn, teleurstelling en verdriet aan het zien van een kalender of een agenda. Deze kalender en/of agenda kan zowel een papieren als digitale variant zijn. </p>
-                </article>
+                <div class="content-wrapper_oorzaak">
+
+                    <img src="images/strook.png" title="jeugdtrauma" alt="jeugdtrauma" class="gescheurdimg">
+
+                    <article class="jeugdtrauma">
+                        <h3><em>Jeugdtrauma</em></h3>
+                        <p> De voornaamste oorzaak van kalenderofobie is een jeugdtrauma. Als kind keek de kalenderofoob vaak uit naar uitstappen. Deze schreef vervolgens de datum met tijdstip braaf op een aftelkalender om vervolgens iedere dag te doorstrepen tot het grote moment. Jammergenoeg werd deze persoon daarin te vaak teleurgesteld. De geplande uitstappen vielen om verschillende redenen steeds in het water. Hierdoor linkt de kalenderofoob het gevoel van pijn, teleurstelling en verdriet aan het zien van een kalender of een agenda. Deze kalender en/of agenda kan zowel een papieren als digitale variant zijn. </p>
+                    </article>
+                </div>
             </div>
 
             <!-- Papiersnee -->
             <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="papiersneeimg" title="papiersneeimg" class="papiersneeimg">
+                <img src="images/blue.jpg" alt="papiersneeimg" title="papiersneeimg" class="papiersneeimg">
             </div>
 
             <div class= "col-md-6 col-sm-12">
@@ -106,24 +100,37 @@
             <!-- Vergeten afspraak-->
 
             <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="vergetenafspraakimg" title="vergetenafspraakimg" class="vergetenafspraakimg">
+                <div class="content-wrapper_oorzaak">
+
+                    <img src="images/Doorlopendestrook.png" title="vergetenafsrpaak" alt="vergetenafsrpaak"></a> 
+
+                    <div class="img_wrapper">
+                        <img src="images/vergetenafspraak.png" alt="vergetenafspraakimg" title="vergetenafspraakimg" class="vergetenafspraakimg">
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-6 col-sm-12">
 
-                <article class="vergetenafsrpaak">
-                    <h3><em>Vergeten afspraak</em></h3>
-                    <p>
+                <div class="content-wrapper_oorzaak">
+
+                    <img src="images/Doorlopendestrook.png" title="jeugdtrauma" alt="jeugdtrauma"></a> 
+
+                    <article class="vergetenafsrpaak">
+                        <h3><em>Vergeten afspraak</em></h3>
+                        <p>
                         Ten derde creëren personen imerominiafobie door het vergeten van een belangrijke (soms levensveranderende) afspraak. De imeroniniafoob schreef eerst al zijn afspraken in een agenda (kan zowel papier als digitaal zijn). Door verkeerde notatie heet deze persoon echter de afspraak gemist. De imerominiafoob gaat vervolgens het gevoel van onbeterouwbaarheid en woede koppelen aan een kalender.
-                    </p>
-                </article>
+                        </p>
+                    </article>
+
+                </div>
 
             </div>
 
             <!-- Tijd is een illusie -->
 
             <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="tijdimg" title="tijdimg" class="tijdimg">
+                <img src="images/tijdillussie.png" alt="tijdimg" title="tijdimg" class="tijdimg">
             </div>
 
             <div class="col-md-6 col-sm-12">
@@ -150,9 +157,19 @@
     <div class="container-fluid">
             <div class="row spacefooter">
                 <div class="col-md-12 col-sm-12">
-                    <footer>© HELENA MINNAERT - 2STDV CMO PD - NMD II <img class="artevelde" src="images/artevelde_wit.png"></footer>
+                    <footer>© HELENA MINNAERT - 2STDV CMO PD - NMD II <img class="artevelde" src="images/artevelde_wit.png">
+                    
+                        
+                    </footer>
                 </div>
             </div>
     </div>
 
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

@@ -8,13 +8,13 @@
     <title>Unieke Fobiën - Website by Helena Minnaert</title>
 
     <!-- bootstrap 4 css -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- CSS file link -->
-    <link href="css/style.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet" type="text/css">  
 
 </head>
 
@@ -22,15 +22,17 @@
 
     <!-- Navigatie -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-fobie"> <!--bg-light wordt veranderd naar bg-fobie -->
-        <div class= "container"> 
-            <a class="navbar-brand" href="index.html"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg bg-fobie"> <!--bg-light wordt veranderd naar bg-fobie -->
+        <div class= "container-fluid"> 
+                
+                 <a class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html" target="self" title="homepage">HOME<span class="sr-only">(current)</span></a>
                 </li>
@@ -47,51 +49,123 @@
                     <a class="nav-link" href="contact.html" target="self" title="contact">CONTACT</a>
                 </li>
               </ul>
-
-            </div>
-         
+        </div>
         </div>
     </nav>
 
-    <!-- Jumbotron -->
-
-    <div class="jumbotron jumbotron-fluid">
-        <img src="images/jumbotron.jpg" alt="Jumbotron" class="img_fluid">
-    </div>
 
     <div class="container">
 
         <!-- Intro tekst -->
-        <div class="row">
+        <div class="row intro">
             <div class="col-md-6 col-sm-12">
-                <h3>Wie zijn we?</h3>
-                <p> De HVI of Hulpgroep Voor Imerominiafoben is een vzw die mensen met imerominiafobie (kalenderofobie) helpt om hun angst onder ogen te zien en deze te overwinnen. Verder informeren wij eveneens omstaanders over deze lastige fobie. De vzw focust zowel op kalenderofoben met een kleine als een grote angst alsook op geïnteresseerden en sympathisanten. Kom gerust eens langs op één van onze lededagen en contacteer ons indien je vragen en/of interesse hebt of ons wil steunen. </p>
+                <img src="images/home_img.png" alt="homeimg" class="homeimg">
             </div>
 
-            <div class="col-md-6 col-sm-12">
-                <img src="xxx" alt="homeimg" class="homeimg">
-            </div>
+            <div class="col-md-6 col-sm-12 hometext">
+                <h1>Hulpgroep voor Kalenderofoben</h1>
+                <p> De HVK of Hulpgroep Voor Kalenderofoben is een vzw die mensen met kalenderofobie helpt om hun angst onder ogen te zien en deze te overwinnen. Verder informeren wij eveneens omstaanders over deze lastige fobie. De vzw focust zowel op kalenderofoben met een kleine als een grote angst alsook op geïnteresseerden en sympathisanten. 
+                Kom gerust eens langs op één van onze lededagen en contacteer ons indien je vragen en/of interesse hebt of ons wil steunen.  </p>
+            </div>  
         </div> 
+    </div>
 
+    <div class="container-fluid">
         <!--Link naar lidmaatschap en contact-->
         <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <a href="lidmaatschap.html"><img src="images/lidmaatschap.jpg" title="lidmaatschapimg" alt="lidmaatschapimg" class="lidmaatschapimg"> <em>LIDMAATSCHAP</em></a>      
+            <div class="col-md-4 col-sm-12">
+                <div class="content-wrapper">
+                    
+                    <img src="images/footerdoorlopend.png" title="wat is het" alt="wat is het" class="contactimg"></a> 
+
+                    <div class="imgabove">
+                        <img src="images/blue.jpg">  
+                    </div>
+
+                    <div class="text-wrapper">
+                        <h3>Wat is het?</h3>
+                        <p> Kalenderofobie: de; v; Nederlands; meervoud: kalenderofobieën. Kalenderofoob: iemand die kalenderofobie heeft; meervoud: kalenderofoben. Kalenderofobie is een psychologische (on)gemotiveerde vrees voor kalenders en/of agendas in zowel papieren en/of digitale vorm.  </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-6 col-sm-12">
-                <a href="contact.html"><img src="images/contact.jpg" title="contactimg" alt="contactimg" class="contactimg"> <em>CONTACT</em></a> 
+            <div class="col-md-4 col-sm-12">
+                <div class="content-wrapper">
+                    <img src="images/footerdoorlopend.png" title="contactimg" alt="contactimg" class="contactimg" class="footerimg"></a> 
+
+                    <div class="imgabove">
+                            <img src="images/blue.jpg">  
+                    </div>
+                
+                <div class="text-wrapper">
+                    <h3>Oorzaken?</h3>
+                    <p> De fobie kan verschillende oorzaken hebben en uit zich in verschillende symptomen. Mogelijke oorzaken zijn: 
+
+                        <ul>
+                            <li> Jeugdtrauma</li> 
+                            <li> Papiersnee</li>
+                            <li> Vergeten afspraak</li>
+                            <li> Tijd is een illusie</li>
+                        </ul>
+                        
+                     Meer informatie hieromtrent vindt u terug op de pagina oorzaken.
+                    </p>
+
+                    </div>   
+                </div>
             </div>
+
+            <div class="col-md-4 col-sm-12">
+
+                
+
+                <div class="content-wrapper">
+                   <img src="images/footerdoorlopend.png" title="contactimg" alt="contactimg" class="footerimg"> 
+                    
+                   <div class="imgabove">
+                        <img src="images/blue.jpg">  
+                    </div>
+                   
+                    <div class="text-wrapper">
+                        <h3>Oplossingen?</h3>
+                        <p> Per symptoom heeft kalenderofobie verschillende oplossingen: 
+        
+                             <ul>
+                                <li> Eerlijkheid</li> 
+                                <li> Sprekende klok</li>
+                                <li>Therapie</li>
+                                <li> Een goed gesprek</li>
+                            </ul>
+                                
+                        De oplossingen per symptoom krijgt u op de pagina symptomen. 
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
    
     <!-- Footer -->
     <div class="container-fluid">
-            <div class="row spacefooter">
+            <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <footer>© HELENA MINNAERT - 2STDV CMO PD - NMD II <img class="artevelde" src="images/artevelde_wit.png"></footer>
+
+                    <div class="footer-wrapper">
+                        
+                        <div class="footer-txt">
+                        <footer>© HELENA MINNAERT - 2STDV CMO PD - NMD II <img class="artevelde" src="images/artevelde_wit.png"></footer>
+                        </div>
+                    </div>  
                 </div>
             </div>
     </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+</html>

@@ -1,1 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Permanent+Marker");
+/*font*/
+/* Basis voor elke body */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F0EFE7;
+  background-image: url(../images/headervs2.png);
+  background-repeat: no-repeat;
+}
+
+/* Variabele kleuren */
+/* kleur navigatie balk, footer, blokken, titels */
+/*- achtergrondkleur knop */
+/* kleur lopende tekst */
+/* kleur em */
+/* Navigatie */
+.nav-link {
+  color: #F0EFE7;
+  position: relative;
+  z-index: 1;
+  margin-top: 55px;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+  color: #d62d30;
+  border: solid 2px #ffff;
+  border-radius: 15px;
+  background-color: #ffff;
+}
+
+/* Tekst */
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.intro h3 {
+  float: right;
+}
+
+.intro p {
+  margin-top: 60px;
+}
+
+.afkeer h3 {
+  float: right;
+}
+
+.afkeer p {
+  float: right;
+}
+
+.gestresst h3 {
+  float: right;
+  margin-right: 14px;
+}
+
+.gestresst p {
+  float: left;
+}
+
+/*Indexpagina */
+.content-wrapper .footerimg {
+  width: 100%;
+  min-height: 700px;
+}
+
+.content-wrapper .contactimg {
+  width: 130%;
+  min-height: 700px;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+.imgabove {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  top: -550px;
+  left: 35px;
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: -122%;
+  padding-left: 40px;
+  padding-right: 10px;
+  color: #ffff;
+}
+
+.text-wrapper p {
+  padding-top: 20px;
+}
+
+.homeimg {
+  width: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 150px;
+  margin-left: -250px;
+}
+
+.hometext {
+  margin-top: 260px;
+}
+
+.hometext h1 {
+  color: #A80000;
+}
+
+/* Afbeeldingen oorzakenpagina */
+.content-wrapper_oorzaak {
+  width: 105%;
+  margin-right: 0;
+}
+
+.content-wrapper_oorzaak img {
+  width: 100%;
+  min-height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-wrapper_oorzaak .gescheurdimg {
+  margin-left: 0;
+}
+
+.img_wrapper img {
+  width: 100%;
+  min-height: 80px;
+  position: relative;
+  margin-top: -90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.papiersneeimg {
+  width: 100%;
+  min-height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tijdimg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Tekst oorzaken pagina */
+.jeugdtrauma {
+  width: 100%;
+  position: relative;
+  margin-top: -60%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.jeugdtrauma p {
+  color: #ffff;
+}
+
+.jeugdtrauma h3 {
+  padding-bottom: 20px;
+}
+
+.vergetenafsrpaak {
+  width: 100%;
+  position: relative;
+  margin-top: -55%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.vergetenafsrpaak p {
+  color: #ffff;
+  padding-right: 30px;
+}
+
+.vergetenafsrpaak h3 {
+  padding-bottom: 20px;
+}
+
+.tijd {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tijd h3 {
+  color: #A80000;
+  padding-bottom: 20px;
+}
+
+em {
+  color: #ffff;
+  font-style: normal;
+}
+
+.papiersnee {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.papiersnee h3 {
+  color: #A80000;
+  padding-bottom: 20px;
+}
+
+/* Afbeeldingen Symptomen pagina */
+.vervreemding {
+  min-height: 480px;
+  width: 320px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.vergetelheid {
+  min-height: 480px;
+  width: 320px;
+  margin-bottom: 50px;
+  margin-top: 200px;
+}
+
+.gestresst {
+  min-height: 480px;
+  width: 320px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.afkeer {
+  min-height: 320px;
+  background-color: #A80000;
+  color: #ffff;
+}
+
+.impulsiviteit {
+  min-height: 320px;
+}
+
+.uitstelgedrag {
+  min-height: 320px;
+}
+
+/* Contactpagina */
+.contacttext {
+  margin-top: 200px;
+  padding-right: 80px;
+}
+
+.contacttext h3 {
+  color: #A80000;
+}
+
+.contacttext p {
+  padding-top: 30px;
+}
+
+.contactinfo {
+  margin-top: 200px;
+  padding-left: 70px;
+  background-color: #A80000;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Font */
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: #A80000;
+  padding: 40px;
+  color: #ffff;
+  min-height: 100px;
+}
+
+.artevelde {
+  width: auto;
+  height: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
 /*# sourceMappingURL=style.css.map */
