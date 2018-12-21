@@ -13,6 +13,10 @@ body{
     background-repeat: no-repeat; 
 }
 
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px; 
+}
 
 /* Variabele kleuren */
 $color1: #A80000; /* kleur navigatie balk, footer, blokken, titels */
@@ -25,13 +29,16 @@ $color5: #ffff; /* kleur em */
 /* Navigatie */
 
 .nav-link{
-    color: $color6; 
+    color: $color5; 
     position: relative;
     z-index: 1;
     margin-top: 55px; 
-    margin-right: 20px; 
+    padding-right: 5px; 
+    left: -46px; 
+    text-align: center; 
     font-size: 1rem; 
     font-family: 'Open Sans', sans-serif;
+    border: solid 2px transparent; 
 }
 
 .nav-link:hover{
@@ -41,15 +48,46 @@ $color5: #ffff; /* kleur em */
     background-color: $color5; 
 }
 
+.navbar-toggler{
+    background-color:#F0EFE7; 
+    height: 60px;
+    margin-right: 60px; 
+}
+
+.navbar-brand{
+    margin-top: 55px; 
+    font-size: 2.2rem; 
+    margin-left: 40px; 
+
+}
+a{
+    font-family:  'Permanent Marker', cursive;
+    color: white; 
+    border: solid 2px transparent; 
+    padding: 20px; 
+}
+
+a:hover{
+    color: $color2;
+    border: solid 2px $color5; 
+    border-radius: 15px; 
+    background-color: $color5; 
+}
 /* Tekst */
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 4rem; 
+    font-size: 3.6rem; 
+    color: $color1; 
 }
 h3{
     font-family: 'Permanent Marker', cursive;
     font-size: 2.5rem; 
+}
+
+h4{
+    font-family: 'Permanent Marker', cursive; 
+    color:white; 
 }
 
 p{
@@ -57,119 +95,119 @@ p{
 }
 
 .intro h3{
-    float: right; 
+    text-align: right; 
 }
 
 .intro p{
-    margin-top: 60px; 
+    margin-top: 30px; 
 }
-
-
-
 
 /*Indexpagina */ 
 
-.content-wrapper .footerimg{
-    width: 100%;
-    min-height: 700px; 
-    
-}
+.achtergrond{
+    background-image: url(../images/footerdoorlopend.png);
+    background-repeat: no-repeat; 
+    height: 800px;
+   background-position: bottom center; 
+   width: 100%; 
+   background-size: cover;
+   margin-left:0.2px; 
 
-.content-wrapper .contactimg{
-    width: 130%; 
-    min-height: 700px; 
 }
 
 .content-wrapper{
-
     width: 100%; 
 }
-
-
 
 .imgabove{
     width: 100%; 
     position: relative;
-    z-index: 2;
-    top:-550px; 
+    z-index: 2;  
     left: 35px; 
+    margin-top: 200px; 
+}
+
+.imgabove img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .text-wrapper{
     width: 100%;
     position: relative; 
-    margin-top:-122%; 
-    padding-left: 40px;
-    padding-right: 10px;  
+    padding-left: 60px;
+    padding-right: 40px;  
     color: $color5; 
+    
 
 }
 
 .text-wrapper p{
     padding-top: 20px; 
+   
 }
+
 
 .homeimg{
     width: 900px; 
     object-fit: cover;
-    margin-top: 150px; 
+    margin-top: 80px; 
     margin-left: -250px;
 }
 
 .hometext{
-    margin-top: 260px; 
-    
+    margin-top: 200px;   
 }
-
-.hometext h1{
-    color: $color1; 
-}
-
-
-
 
 
 /* Afbeeldingen oorzakenpagina */ 
 
-.content-wrapper_oorzaak{
 
-    width: 105%;
-    margin-right: 0; 
-    
+.achtergrondoorzaak{
+    background-image: url(../images/strook.png);
+    background-repeat: no-repeat;
+    margin-top:-160px;
+    z-index:-2;  
+}
+
+.achtergrondafspraak{
+    background-image: url(../images/strook2.png);
+    background-repeat: no-repeat;
 }
 
 
 .content-wrapper_oorzaak img{
     
     width: 100%; 
-    min-height: 580px; 
+    height: 600px; 
     object-fit: cover; 
 }
 
-.content-wrapper_oorzaak .gescheurdimg{
-    margin-left: 0; 
-}
 
 .img_wrapper img{
-    width: 100%;
-    min-height: 80px; 
+    width: 80%;
     position: relative; 
-    margin-top: -90%;
-    object-fit: cover; 
+    height: 380px;
+    object-fit: cover;
+    margin-left: 80px; 
+    margin-top: 240px;
+    margin-bottom: 100px;    
   
 }
 
 .papiersneeimg{
-    width: 100%;
+    width: 80%;
     min-height: 140px; 
     object-fit: cover; 
-   
-   
+    margin-left: 80px; 
+ 
 }
 
 .tijdimg{
-    width: 100%;
+    width: 80%;
     object-fit: cover; 
+    margin-left: 150px; 
 
 }
 
@@ -183,13 +221,14 @@ ul{
 .jeugdtrauma{
     width: 100%;
     position: relative; 
-    margin-top: -60%; 
     padding-left: 40px; 
-    padding-right: 40px; 
+    padding-right: 60px; 
+    margin-top: 260px; 
 }
 
 .jeugdtrauma p{
     color: $color5; 
+    padding-right: 20px;
     
 }
 
@@ -199,7 +238,8 @@ ul{
 .vergetenafsrpaak{
     width: 100%;
     position: relative; 
-    margin-top: -55%; 
+    margin-top: 280px;
+    padding-right: 60px;  
     padding-left: 40px; 
     padding-right: 40px; 
 }
@@ -237,6 +277,8 @@ em {
 .papiersnee h3{
     color: $color1; 
     padding-bottom: 20px; 
+    margin-top: 50px; 
+    margin-right: 60px; 
 }
 
 
@@ -247,58 +289,328 @@ em {
     min-height: 480px; 
     width: 320px; 
     margin-bottom: 50px; 
-    margin-top: 50px; 
+ 
+}
+
+.vervreemdingtxt{
+    margin-top: 80px; 
+    background-color: $color5; 
+    border-radius:15px; 
+    padding: 40px; 
+    min-height: 320px; 
+    
+}
+.vervreemdingtxt h3{
+    color:$color1; 
+    padding-bottom: 10px; 
 }
 
 .vergetelheid{
-    min-height: 480px; 
-    width: 320px; 
-    margin-bottom: 50px; 
-    margin-top: 200px; 
+    width: 100%;
+    margin-bottom: 30px; 
+    margin-top: 160px; 
+    object-fit: cover; 
 }
 
-.gestresst{
-    min-height: 480px; 
-    width: 320px; 
-    margin-bottom: 50px; 
-    margin-top: 50px; 
+.vergetelheid img{
+    object-fit: cover; 
+    margin-top: 180px; 
 }
+
+.vergetelheidtxt{
+    margin-top: 220px; 
+    background-color: white; 
+    border-radius: 15px; 
+    padding: 40px;
+    min-height: 320px; 
+}
+
+.vergetelheid h3{
+    color: $color1; 
+    text-align: left;
+    padding-bottom: 10px; 
+    padding-left: 20px;
+    color: $color1; 
+}
+.vergetelheid p{
+
+    padding-left: 20px; 
+}
+
+
 
 .afkeer{
+    width: 100%; 
     min-height: 320px; 
-    background-color: $color1;
-    color: $color5; 
-    float: right;
-    border-radius: 15px;  
+    object-fit: cover; 
+    margin-top:-40px; 
     
 }
 
-.afkeer p{
-    float: right;
-    padding-left: 40px; 
-    padding-right: 40px;
+.afkeertxt{
+    background-color: $color1;
+    color: $color5; 
+    border-radius: 15px;  
+    padding: 40px;
+    min-height: 320px; 
+    width: 100%; 
+}
+
+
+.afkeer h3 {
+    text-align: right;
     padding-top: 20px; 
+    padding-bottom: 10px; 
+    padding-right: 40px;
 }
-
-.afkeer h3{
-    float: right; 
+  
+.afkeer p {
+    text-align: right;
     padding-right: 40px; 
+    padding-left: 40px; 
+    
+}
+
+.gestresst{
+    min-height: 320px; 
+    width: 100%; 
+    margin-bottom: 50px; 
+    margin-top: 50px; 
+    object-fit: cover;  
 }
 
 
-.impulsiviteit{
+.gestressttxt{
+    background-color:$color5; 
+    border-radius: 15px; 
+    padding: 40px; 
     min-height: 320px; 
 }
+.gestresst h3 {
+    text-align: right;
+    padding-bottom: 10px; 
+    color: $color1; 
+}
+  
+.gestresst p {
+    text-align: right;
+ 
+    padding-left: 40px; 
 
-.uitstelgedrag{
-    min-height: 320px;
+}
+
+.impulsiviteit{
+
+    width: 100%; 
+    min-height: 320px; 
+    background-color: $color1;
+    color: $color5; 
+    border-radius: 15px; 
+    margin-bottom: 50px; 
+}
+
+.impulsiviteit h3{
+    padding-top: 20px; 
+    padding-bottom: 10px; 
+    padding-left: 40px;
+}
+
+.impulsiviteit p{
+    padding-right: 40px; 
+    padding-left: 40px; 
+}
+
+/* Lidmaatschap */
+
+.lidtekst{
+    
+    margin-top: 40%; 
+    margin-right: 40px; 
+}
+
+.ledentitle{
+    margin-top: 35%; 
+
+}
+.geef h3{
+    color: $color1; 
+    margin-top: 40px;
+    margin-bottom: 60px;  
+}
+.bedrag h4 {
+    color: $color1; 
+}
+.button1{
+    margin-top: 40px; 
+    margin-bottom: 80px; 
+    margin-left: -20px; 
+}
+.button1 ul{
+    list-style-type: none; 
+    
+}
+
+.button1 li{
+    float: left; 
+    margin-right: 40px 
+}
+
+.button1 p{
+    font-weight: 600; 
+    margin-left: -40px; 
+}
+
+.button1 button{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    border: 1px solid black; 
+    margin-right: 15px; 
+    box-shadow: 0 6px 20px 0px rgba(0,0,0,0.1)
+}
+
+.button1 button:hover{
+    background-color: $color1; 
+    border: 1px solid transparent;
+}
+
+.buttonbedrag{
+    margin-bottom: 60px; 
+    margin-left: -20px; 
+}
+
+.buttonbedrag p{
+    font-weight: 600; 
+}
+.buttonbedrag ul{
+    list-style-type: none; 
+}
+
+.buttonbedrag button{
+    width: 80px; 
+    height: 40px; 
+    padding: 5px;
+    text-align: center; 
+    margin-right: 15px; 
+    border: 1px solid black; 
+    border-radius: 15px; 
+    background-color:#F0EFE7; 
+    box-shadow: 0 6px 20px 0px rgba(0,0,0,0.1)
+}
+
+.buttonbedrag button:hover{
+    background-color: $color1; 
+    color:white; 
+    border: 1px solid transparent; 
+}
+
+.buttonbedrag li{
+    float: left; 
+}
+
+.buttonof{
+    float: left; 
+}
+
+.buttonof p{
+    font-weight: 600; 
+}
+
+.buttonof button{
+    width: 180px; 
+    height: 40px; 
+    padding: 5px;
+    text-align: center; 
+    margin-left: 20px; 
+    border: 1px solid black; 
+    border-radius: 15px; 
+    background-color: #F0EFE7; 
+    box-shadow: 0 6px 20px 0px rgba(0,0,0,0.1)
+}
+
+.buttonof button:hover{
+    background-color: $color1; 
+    color:white; 
+    border: 1px solid transparent; 
+}
+
+
+.buttonstap2 button{
+    width: 300px; 
+    background-color: $color1;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem; 
+    padding: 20px;
+    margin-top: 60px; 
+    color: white; 
+    border-radius:  15px;   
+    box-shadow: 0 6px 20px 0px rgba(0,0,0,0.24)
+}
+
+.buttonstap2 button:hover{
+    background-color: #F0EFE7;
+    color: black; 
+
+}
+
+
+.sidelid{
+    background-color:$color1; 
+    border-radius: 15px; 
+    padding: 40px; 
+    color: white;
+    margin-bottom: 80px;  
+}
+.aantalgiften ul{
+    list-style-type: none; 
+    
+}
+
+.aantalgiften li{
+    font-size: 3rem; 
+    margin-left: -20px; 
+    margin-top: -10px; 
+}
+
+.reedsgestort img{
+    width: 280px; 
+    height: 30px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+.reedsgestort em{
+    font-size: 1.5rem; 
+}
+
+.voordelen {
+    margin-bottom: 80px; 
+}
+.voordelen ul{
+    list-style-type: none; 
+   
+}
+
+.voordelen li{
+    float: left; 
+    width: 100px; 
+    height: 60px; 
+    padding-top: 16px;
+    text-align: center; 
+    margin-right: 30px;
+    margin-left:-20px;
+    background-color: #F0EFE7;
+    border-radius: 15px; 
+    color: black; 
 }
 
 /* Contactpagina */
 
 .contacttext{
     margin-top: 200px;
-    padding-right: 80px;  
+    padding-right: 80px;
+    text-align: right;   
+    
 }
 
 .contacttext h3 {
@@ -307,17 +619,55 @@ em {
 }
 
 .contacttext p{
-    padding-top: 30px; 
+    margin-top: 30px; 
 }
 
 .contactinfo{
-    margin-top: 200px; 
+    margin-top: 220px; 
+    padding-top: 30px; 
     padding-left: 70px; 
+    padding-top: 40px; 
     background-color: $color1;
     border-radius: 15px;  
     color: white; 
+    height: 360px;
 }
 
+.contactinfo a{
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid transparent; 
+}
+
+.agendatitle h3{
+    color: white; 
+    margin-top: 250px; 
+    margin-left: 100px;
+    z-index: 2; 
+}
+.contactinfo a:hover{
+    background-color:transparent; 
+    border: 1px solid transparent; 
+
+}
+date{
+    position: relative;
+    top: 40px; 
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;  
+
+}
+
+.text-wrapper-contact{
+    margin-bottom: 36%;  
+    margin-left: 40px; 
+    margin-right: 40px; 
+}
+
+.titlebijeenkomsten{
+    position: relative; 
+    bottom: 20px; 
+}
 
 /* Font */
 h2{
@@ -331,6 +681,7 @@ footer{
     padding: 40px;
     color: $color5;
     min-height: 100px;
+    width: 100%; 
 }
 
 .artevelde{
