@@ -356,7 +356,7 @@ em {
 .gestresst {
   min-height: 320px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   margin-top: 50px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -383,6 +383,9 @@ em {
 .impulsiviteit {
   width: 100%;
   min-height: 320px;
+}
+
+.impulsiviteittxt {
   background-color: #A80000;
   color: #ffff;
   border-radius: 15px;
