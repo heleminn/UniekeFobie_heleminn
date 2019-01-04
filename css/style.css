@@ -27,7 +27,6 @@ body {
 /* Navigatie */
 .nav-link {
   color: #ffff;
-  position: relative;
   z-index: 1;
   margin-top: 55px;
   padding-right: 5px;
@@ -36,6 +35,12 @@ body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   border: solid 2px transparent;
+}
+
+@media (min-width: 560px) {
+  .nav-link {
+    position: relative;
+  }
 }
 
 .nav-link:hover {
@@ -49,12 +54,17 @@ body {
   background-color: #F0EFE7;
   height: 60px;
   margin-right: 60px;
+  margin-top: 50px;
 }
 
 .navbar-brand {
   margin-top: 55px;
   font-size: 2.2rem;
   margin-left: 40px;
+}
+
+.navbar-light {
+  color: white;
 }
 
 a {
@@ -69,6 +79,10 @@ a:hover {
   border: solid 2px #ffff;
   border-radius: 15px;
   background-color: #ffff;
+}
+
+.bg-fobie {
+  background-color: #A80000;
 }
 
 /* Tekst */
@@ -104,23 +118,49 @@ p {
 .achtergrond {
   background-image: url(../images/footerdoorlopend.png);
   background-repeat: no-repeat;
-  height: 800px;
   background-position: bottom center;
   width: 100%;
   background-size: cover;
   margin-left: 0.2px;
 }
 
+@media (min-width: 560px) {
+  .achtergrond {
+    background-image: url(../images/footerdoorlopend.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    background-position: bottom center;
+    width: 100%;
+    background-size: cover;
+    margin-left: 0.2px;
+  }
+}
+
 .content-wrapper {
   width: 100%;
+  background-color: #A80000;
+  margin-bottom: -350px;
+  margin-top: 360px;
+}
+
+@media (min-width: 560px) {
+  .content-wrapper {
+    margin-top: 0px;
+  }
 }
 
 .imgabove {
   width: 100%;
   position: relative;
   z-index: 2;
-  left: 35px;
-  margin-top: 200px;
+  left: 50px;
+  margin-top: 140px;
+}
+
+@media (min-width: 560px) {
+  .imgabove {
+    margin-top: 200px;
+  }
 }
 
 .imgabove img {
@@ -143,23 +183,50 @@ p {
 }
 
 .homeimg {
-  width: 900px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-top: 80px;
-  margin-left: -250px;
+  width: 600px;
+  margin-top: 100px;
+  margin-left: -120px;
+  margin-bottom: -200px;
+}
+
+@media (min-width: 560px) {
+  .homeimg {
+    width: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 80px;
+    margin-left: -230px;
+  }
 }
 
 .hometext {
   margin-top: 200px;
 }
 
+@media (min-width: 560px) {
+  .hometext {
+    margin-top: 160px;
+  }
+}
+
 /* Afbeeldingen oorzakenpagina */
 .achtergrondoorzaak {
   background-image: url(../images/strook.png);
   background-repeat: no-repeat;
-  margin-top: -160px;
+  margin-top: 50px;
   z-index: -2;
+}
+
+@media (min-width: 560px) {
+  .achtergrondoorzaak {
+    margin-top: -160px;
+  }
+}
+
+.backcolor {
+  background-color: #A80000;
+  width: 100%;
+  height: 40px;
 }
 
 .achtergrondafspraak {
@@ -180,24 +247,44 @@ p {
   height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 80px;
-  margin-top: 240px;
-  margin-bottom: 100px;
+  margin-left: 40px;
+}
+
+@media (min-width: 560px) {
+  .img_wrapper img {
+    margin-top: 240px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+  }
 }
 
 .papiersneeimg {
-  width: 80%;
+  width: 100%;
   min-height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 80px;
+  margin-left: -10px;
+}
+
+@media (min-width: 560px) {
+  .papiersneeimg {
+    margin-left: 80px;
+    width: 80%;
+  }
 }
 
 .tijdimg {
-  width: 80%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 150px;
+  margin-left: 10px;
+}
+
+@media (min-width: 560px) {
+  .tijdimg {
+    margin-left: 150px;
+    width: 80%;
+  }
 }
 
 ul {
@@ -211,7 +298,12 @@ ul {
   position: relative;
   padding-left: 40px;
   padding-right: 60px;
-  margin-top: 260px;
+}
+
+@media (min-width: 560px) {
+  .jeugdtrauma {
+    margin-top: 260px;
+  }
 }
 
 .jeugdtrauma p {
@@ -226,10 +318,18 @@ ul {
 .vergetenafsrpaak {
   width: 100%;
   position: relative;
-  margin-top: 280px;
+  margin-top: 60px;
+  margin-bottom: 80px;
   padding-right: 60px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+@media (min-width: 560px) {
+  .vergetenafsrpaak {
+    margin-top: 280px;
+    margin-bottom: 0;
+  }
 }
 
 .vergetenafsrpaak p {
@@ -273,7 +373,15 @@ em {
 .vervreemding {
   min-height: 480px;
   width: 320px;
-  margin-bottom: 50px;
+  margin-bottom: -140px;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+@media (min-width: 560px) {
+  .vervreemding {
+    margin-bottom: 50px;
+  }
 }
 
 .vervreemdingtxt {
@@ -289,26 +397,54 @@ em {
   padding-bottom: 10px;
 }
 
+@media (min-width: 560px) {
+  .vervreemdingimg {
+    margin-top: 20px;
+  }
+}
+
 .vergetelheid {
-  width: 100%;
-  margin-bottom: 30px;
+  width: 80%;
   margin-top: 160px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-left: 40px;
+}
+
+@media (min-width: 560px) {
+  .vergetelheid {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 0px;
+  }
 }
 
 .vergetelheid img {
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 180px;
+  width: 100px;
 }
 
 .vergetelheidtxt {
-  margin-top: 220px;
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 15px;
   padding: 40px;
   min-height: 320px;
+  margin-left: 0px;
+}
+
+@media (min-width: 560px) {
+  .vergetelheidtxt {
+    margin-top: 220px;
+    margin-bottom: 0px;
+  }
 }
 
 .vergetelheid h3 {
@@ -328,7 +464,13 @@ em {
   min-height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: -40px;
+  margin-top: -1200px;
+}
+
+@media (min-width: 560px) {
+  .afkeer {
+    margin-top: -40px;
+  }
 }
 
 .afkeertxt {
@@ -338,6 +480,13 @@ em {
   padding: 40px;
   min-height: 320px;
   width: 100%;
+  margin-top: 380px;
+}
+
+@media (min-width: 560px) {
+  .afkeertxt {
+    margin-top: 0px;
+  }
 }
 
 .afkeer h3 {
@@ -356,10 +505,25 @@ em {
 .gestresst {
   min-height: 320px;
   width: 100%;
-  margin-bottom: 200px;
-  margin-top: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 560px) {
+  .gestresst {
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
+}
+
+.gestresstimg {
+  margin-top: -890px;
+}
+
+@media (min-width: 560px) {
+  .gestresstimg {
+    margin-top: 40px;
+  }
 }
 
 .gestressttxt {
@@ -367,6 +531,16 @@ em {
   border-radius: 15px;
   padding: 40px;
   min-height: 320px;
+  margin-bottom: -200px;
+  margin-top: 340px;
+  width: 100%;
+}
+
+@media (min-width: 560px) {
+  .gestressttxt {
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
 }
 
 .gestresst h3 {
@@ -383,6 +557,14 @@ em {
 .impulsiviteit {
   width: 100%;
   min-height: 320px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 560px) {
+  .impulsiviteit {
+    margin-top: 0px;
+  }
 }
 
 .impulsiviteittxt {
@@ -407,26 +589,62 @@ em {
 .lidtekst {
   margin-top: 40%;
   margin-right: 40px;
+  padding-left: 20px;
+}
+
+@media (min-width: 560px) {
+  .lidtekst {
+    margin-top: 40%;
+    margin-right: 40px;
+  }
 }
 
 .ledentitle {
-  margin-top: 35%;
+  margin-top: 20%;
+  padding-left: 20px;
+}
+
+@media (min-width: 560px) {
+  .ledentitle {
+    margin-top: 35%;
+  }
 }
 
 .geef h3 {
   color: #A80000;
   margin-top: 40px;
   margin-bottom: 60px;
+  padding-left: 20px;
+}
+
+@media (min-width: 560px) {
+  .geef h3 {
+    padding-left: 0;
+  }
 }
 
 .bedrag h4 {
   color: #A80000;
+  padding-left: 20px;
+}
+
+@media (min-width: 560px) {
+  .bedrag h4 {
+    padding-left: 0;
+  }
 }
 
 .button1 {
   margin-top: 40px;
-  margin-bottom: 80px;
-  margin-left: -20px;
+  margin-bottom: 10px;
+  margin-left: -5px;
+}
+
+@media (min-width: 560px) {
+  .button1 {
+    margin-left: -20px;
+    margin-bottom: 80px;
+  }
 }
 
 .button1 ul {
@@ -434,13 +652,27 @@ em {
 }
 
 .button1 li {
-  float: left;
+  float: center;
   margin-right: 40px;
+}
+
+@media (min-width: 560px) {
+  .button1 li {
+    float: left;
+  }
 }
 
 .button1 p {
   font-weight: 600;
-  margin-left: -40px;
+  margin-left: 60px;
+  margin-top: -34px;
+}
+
+@media (min-width: 560px) {
+  .button1 p {
+    margin-left: -40px;
+    margin-top: 0;
+  }
 }
 
 .button1 button {
@@ -459,8 +691,15 @@ em {
 }
 
 .buttonbedrag {
-  margin-bottom: 60px;
-  margin-left: -20px;
+  margin-bottom: 100px;
+  margin-left: -5px;
+}
+
+@media (min-width: 560px) {
+  .buttonbedrag {
+    margin-left: -20px;
+    margin-bottom: 60px;
+  }
 }
 
 .buttonbedrag p {
@@ -472,16 +711,27 @@ em {
 }
 
 .buttonbedrag button {
-  width: 80px;
-  height: 40px;
-  padding: 5px;
+  width: 100px;
+  height: 50px;
+  padding: 12px;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 50px;
+  margin-bottom: 20px;
   border: 1px solid black;
   border-radius: 15px;
   background-color: #F0EFE7;
   -webkit-box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 560px) {
+  .buttonbedrag button {
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+  }
 }
 
 .buttonbedrag button:hover {
@@ -496,6 +746,14 @@ em {
 
 .buttonof {
   float: left;
+  margin-left: -144px;
+  margin-top: 90px;
+}
+
+@media (min-width: 560px) {
+  .buttonof {
+    float: left;
+  }
 }
 
 .buttonof p {
@@ -504,8 +762,8 @@ em {
 
 .buttonof button {
   width: 180px;
-  height: 40px;
-  padding: 5px;
+  height: 60px;
+  padding-top: 10px;
   text-align: center;
   margin-left: 20px;
   border: 1px solid black;
@@ -515,10 +773,29 @@ em {
           box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 560px) {
+  .buttonof button {
+    height: 40px;
+    padding: 5px;
+  }
+}
+
 .buttonof button:hover {
   background-color: #A80000;
   color: white;
   border: 1px solid transparent;
+}
+
+.fiscaaltekst {
+  margin-top: 120px;
+  margin-left: 20px;
+}
+
+@media (min-width: 560px) {
+  .fiscaaltekst {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .buttonstap2 button {
@@ -527,11 +804,21 @@ em {
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5rem;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 40px;
   color: white;
   border-radius: 15px;
   -webkit-box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.24);
           box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.24);
+}
+
+@media (min-width: 560px) {
+  .buttonstap2 button {
+    margin-top: 60px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .buttonstap2 button:hover {
@@ -545,6 +832,15 @@ em {
   padding: 40px;
   color: white;
   margin-bottom: 80px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (min-width: 560px) {
+  .sidelid {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .aantalgiften ul {
@@ -569,7 +865,13 @@ em {
 }
 
 .voordelen {
-  margin-bottom: 80px;
+  margin-bottom: 200px;
+}
+
+@media (min-width: 560px) {
+  .voordelen {
+    margin-bottom: 80px;
+  }
 }
 
 .voordelen ul {
@@ -578,18 +880,40 @@ em {
 
 .voordelen li {
   float: left;
-  width: 100px;
+  width: 120px;
   height: 60px;
   padding-top: 16px;
   text-align: center;
   margin-right: 30px;
+  margin-bottom: 10px;
   margin-left: -20px;
   background-color: #F0EFE7;
   border-radius: 15px;
   color: black;
 }
 
+@media (min-width: 560px) {
+  .voordelen li {
+    width: 100px;
+    margin-bottom: 0;
+  }
+}
+
 /* Contactpagina */
+.content-wrapper-contact {
+  margin-top: 120px;
+}
+
+@media (min-width: 560px) {
+  .content-wrapper-contact {
+    margin-top: 0px;
+  }
+}
+
+.red {
+  background-color: #A80000;
+}
+
 .contacttext {
   margin-top: 200px;
   padding-right: 80px;
@@ -624,7 +948,15 @@ em {
   color: white;
   margin-top: 250px;
   margin-left: 100px;
+  margin-bottom: -50px;
+  padding-left: 20px;
   z-index: 2;
+}
+
+@media (min-width: 560px) {
+  .agendatitle h3 {
+    margin-bottom: 0px;
+  }
 }
 
 .contactinfo a:hover {
@@ -638,12 +970,6 @@ date {
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-}
-
-.text-wrapper-contact {
-  margin-bottom: 36%;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .titlebijeenkomsten {
@@ -663,13 +989,30 @@ footer {
   color: #ffff;
   min-height: 100px;
   width: 100%;
+  margin-top: 260px;
+}
+
+@media (min-width: 560px) {
+  footer {
+    margin-top: 0px;
+  }
 }
 
 .artevelde {
   width: auto;
-  height: 60px;
+  height: 30px;
   position: absolute;
   bottom: 20px;
   right: 60px;
+}
+
+@media (min-width: 560px) {
+  .artevelde {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
