@@ -183,9 +183,9 @@ p {
 }
 
 .homeimg {
-  width: 600px;
+  width: 500px;
   margin-top: 100px;
-  margin-left: -120px;
+  margin-left: -40px;
   margin-bottom: -200px;
 }
 
@@ -264,12 +264,14 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: -10px;
+  margin-top: 40px;
 }
 
 @media (min-width: 560px) {
   .papiersneeimg {
     margin-left: 80px;
     width: 80%;
+    margin-top: 0;
   }
 }
 
@@ -318,7 +320,7 @@ ul {
 .vergetenafsrpaak {
   width: 100%;
   position: relative;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 80px;
   padding-right: 60px;
   padding-left: 40px;
@@ -373,7 +375,7 @@ em {
 .vervreemding {
   min-height: 480px;
   width: 320px;
-  margin-bottom: -140px;
+  margin-bottom: -120px;
   margin-top: -40px;
   margin-left: 40px;
 }
@@ -464,7 +466,7 @@ em {
   min-height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: -1200px;
+  margin-top: -1120px;
 }
 
 @media (min-width: 560px) {
@@ -517,7 +519,7 @@ em {
 }
 
 .gestresstimg {
-  margin-top: -890px;
+  margin-top: -860px;
 }
 
 @media (min-width: 560px) {
@@ -711,7 +713,7 @@ em {
 }
 
 .buttonbedrag button {
-  width: 100px;
+  width: 160px;
   height: 50px;
   padding: 12px;
   text-align: center;
@@ -746,13 +748,14 @@ em {
 
 .buttonof {
   float: left;
-  margin-left: -144px;
+  margin-left: -200px;
   margin-top: 90px;
 }
 
 @media (min-width: 560px) {
   .buttonof {
     float: left;
+    margin-left: -144px;
   }
 }
 
