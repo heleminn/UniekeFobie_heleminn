@@ -731,7 +731,7 @@ em {
     box-shadow: 0 6px 20px 0px rgba(0,0,0,0.1);
 
     @media(min-width:$breekpunt){
-        margin-bottom: 0; 
+        margin-bottom: 0px; 
         margin-right: 15px; 
         width: 80px; 
         height: 40px; 
@@ -758,7 +758,9 @@ em {
 
     @media(min-width:$breekpunt){
         float: left; 
-        margin-left: -144px; 
+        margin-left: 0px; 
+        margin-top: 0px; 
+    
     }
 
 }

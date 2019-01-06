@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- CSS file link -->
-    <link href="css/style.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet"> 
+    
+    <!-- link animatie -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -63,7 +66,7 @@
             </div>
 
             <div class="col-md-8 col-sm-12">
-                <article class="vergetelheid vergetelheidtxt">
+                <article class="vergetelheid vergetelheidtxt" data-aos="fade-left">
                     <h3>Vergetelheid</h3>
                     <p>
                         De kalenderofoob vergeet verjaardagen en feestdagen omdat hij of zij niet in zijn/haar kalender kijkt of weigert te kijken.
@@ -79,7 +82,7 @@
 
             <!--Afkeer-->
             <div class="col-md-6 col-sm-12">
-                <article class="afkeertxt">
+                <article class="afkeertxt" data-aos="fade-right">
                     <h3><em>Afkeer</em></h3>
                     <p> De kalenderofoob weigert doodles in te vullen is niet planmatig en weigert zijn kalender zijn te vergelijken met iemand anders. 
                         Hij/zij stelt alles uit om niet geconfronteerd te worden met de realiteit van tijd…
@@ -102,7 +105,7 @@
             </div>
 
             <div class="col-md-8 col-sm-12">
-                <article class="vervreemdingtxt">
+                <article class="vervreemdingtxt" data-aos="fade-left">
                     <h3>Vervreemding</h3>
                     <p> De kalenderofoob gaat zich vervreemden van de maatschappij doordat hij/zij niet naar zijn kalender kijkt. Hierdoor worden ze associaal, komen ze het huis niet meer uit en raken ze uiteindelijk volledig geïsoleerd. Doordat de kalenderofoob tevens geen afspraken kan naleven raakt hij/zij eveneens stelselmatig zijn vrienden kwijt. <br> <strong>Mogelijke oplossing: heb een goed gesprek met vrienden. Zij zullen je ervan weerhouden om in je huis opgesloten te blijven. </strong>
                 
@@ -121,7 +124,7 @@
             </div>
 
             <div class="col-md-6 col-sm-12">
-                <article class="impulsiviteit impulsiviteittxt">
+                <article class="impulsiviteit impulsiviteittxt" data-aos="fade-left">
                     <h3><em>Impulsiviteit</em></h3>
                     <p>De kalenderofoob is zeer impulsief. Alle beslissingen worden op het laatste moment gemaakt waardoor hij of zij op een zeer korte tijd iedereen optrommelt. Deze impulsiviteit komt omdat deze weigert iets zijn/haar kalender in te plannen. <br> <strong>Mogelijke oplossing: maak een to-do lijst samen met je partner of een van je vrienden. Zo leer je stelselmatig zaken plannen zonder kalender. </strong></p>
                 </article>
@@ -133,7 +136,7 @@
             <!--Gestresst-->
 
             <div class="col-md-8 col-sm-12">
-                    <article class="gestresst gestressttxt">
+                    <article class="gestresst gestressttxt" data-aos="fade-right">
                         <h3>Gestresst</h3>
                         <p>De kalenderofoob zijn stresslevel verhoogt naargelang de datum waarop hij of zij ZEKER verplicht iets te doen heeft dichterbij komt. <br> <strong>Mogelijke oplossing: stel een sprekende klok in die je waarschuwt wanneer er een bepaalde periode voorbij is en je dus dichter tegen de datum van je deadline komt. Hierdoor kan je je voorbereiden en gaat je stressniveau dalen. </strong>
                         </p>
@@ -163,5 +166,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+          AOS.init({
+            offset: 120,
+            duration: 400,
+           });
+    </script>
+
   </body>
 </html>

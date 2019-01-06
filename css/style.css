@@ -728,7 +728,7 @@ em {
 
 @media (min-width: 560px) {
   .buttonbedrag button {
-    margin-bottom: 0;
+    margin-bottom: 0px;
     margin-right: 15px;
     width: 80px;
     height: 40px;
@@ -755,7 +755,8 @@ em {
 @media (min-width: 560px) {
   .buttonof {
     float: left;
-    margin-left: -144px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
